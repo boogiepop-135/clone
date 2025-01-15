@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Post</title>
+    <link rel="stylesheet" href="style.css"> <!-- Error: Espero que este archivo esté en el lugar correcto. Si no, la página no se verá como debería. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Error: Quizás estoy usando una versión de Font Awesome más pesada de lo necesario. -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            padding-top: 20px;
+        }
+        .post {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            height: auto;
+            overflow: hidden;
+            font-family: 'Roboto', sans-serif;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        .header .text {
+            flex-grow: 1;
+            margin-left: 10px;
+        }
+        img {
+            width: 100%;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .buttons span {
+            display: flex;
+            align-items: center;
+        }
+        .heart, .comment, .paper {
+            margin-right: 10px;
+        }
+        .save {
+            margin-left: auto;
+        }
+        .body {
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="post">
+        <div class="header">
+            <span class="icon-css"><i class="fa-brands fa-css3-alt"></i></span>
+            <span class="text"> <strong>HTML5</strong><br> Rigoberto</span>
+            <span class="punto"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+        </div>
+        <img src="https://vocenaneve.com.br/wp-content/uploads/2021/10/banff-neve.jpg" alt="foto post">
+        <!-- Error: Intenté cambiar el tamaño de la imagen con CSS, pero no lograba el ajuste correcto. -->
+        <!-- <img src="https://vocenaneve.com.br/wp-content/uploads/2021/10/banff-neve.jpg" style="width: 90%;"> -->
+        <div class="buttons">
+            <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            <span class="comment"><i class="fa-regular fa-comment"></i></span>
+            <span class="paper"><i class="fa-regular fa-paper-plane"></i></span>
+            <span class="save"><i class="fa-regular fa-bookmark"></i></span>
+        </div>
+        <div class="body">
+            <p>Liked by <strong>4GeeksAcademy</strong>, <strong>html5</strong>, <strong>Web</strong> and <strong>100,000 others</strong></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <!-- Error: Intenté agregar un botón "Ver más" aquí, pero no se mostraba bien. -->
+            <!-- <button style="width: 100%; padding: 10px;">Ver más</button> -->
+        </div>
+    </div>
+</body>
+</html>
